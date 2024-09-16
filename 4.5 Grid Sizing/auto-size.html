@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Size Grid</title>
+
+    <!-- Internal CSS -->
+
+    <style>
+      .container {
+        display: grid;
+        grid-template-rows: 100px 65px;
+        grid-template-columns: 200px auto;
+      }
+
+      .item {
+        background-color: darkviolet;
+        font-size: 3rem;
+        color: white;
+        border: 5px solid goldenrod;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Auto Size Grid</h1>
+
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item1">2</div>
+      <div class="item item1">3</div>
+      <div class="item item1">4</div>
+    </div>
+  </body>
+</html>
