@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Sizing Exercise</title>
+
+    <!-- Internal CSS -->
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        background-color: #f0f0f0;
+        margin: 8px;
+      }
+
+      .container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-columns: auto 400px minmax(200px, 500px);
+        grid-auto-rows: 50px;
+        width: 80%;
+        background-color: #ddd;
+        padding: 20px;
+        margin: 2rem;
+      }
+
+      .item {
+        font-size: 18px;
+        color: white;
+        background-color: seagreen;
+        padding: 20px;
+        border: 2px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Grid Sizing Exercise</h1>
+
+    <div class="container">
+      <div class="item item1">width expands to fill space</div>
+      <div class="item item2">400px wide</div>
+      <div class="item item3">min 200px max 500px wide</div>
+      <div class="item item4">width expands to fill space</div>
+      <div class="item item5">400px wide</div>
+      <div class="item item6">min 200px max 500px wide</div>
+      <div class="item item7">width expands to fill space</div>
+      <div class="item item8">400px wide</div>
+      <div class="item item9">min 200px max 500px wide</div>
+      <div class="item item10">50px high</div>
+    </div>
+  </body>
+</html>
